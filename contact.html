@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f6f2">
+    <meta name="description" content="Tell GitHubColab what you're dreaming up. We'd love to hear about your next project.">
+    <title>Contact — GitHubColab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header"><nav class="navbar container" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="GitHubColab home"><span class="logo-mark" aria-hidden="true">g</span>github<span>colab</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+        <ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a class="nav-cta" href="contact.html" aria-current="page">Let’s talk <span aria-hidden="true">↗</span></a></li></ul>
+    </nav></header>
+    <main>
+        <section class="contact-hero container" data-reveal><div class="contact-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Your turn</p><h1>So, what’s<br><span class="serif-accent">on your mind?</span></h1><p class="page-lede">A big idea, a half-formed thought, or just a hello—we’re all ears.</p><div class="contact-direct"><span>Prefer a good old-fashioned email?</span><a href="mailto:hello@githubcolab.com">hello@githubcolab.com <span>↗</span></a></div><div class="contact-stamp" aria-hidden="true">LET’S<br>MAKE<br><span>GOOD.</span></div></div>
+            <form class="contact-form" id="contact-form">
+                <p class="form-intro">Tell us a little about it.<br><span>We’ll take it from there.</span></p>
+                <label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="What should we call you?" required>
+                <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <label for="project">What are you thinking about?</label><textarea id="project" name="project" rows="4" placeholder="The big idea, the little detail, anything at all..." required></textarea>
+                <button class="button button-dark form-submit" type="submit">Open your email app <span aria-hidden="true">↗</span></button>
+                <p class="form-note">Your email app will open with your message ready to send.</p>
+            </form>
+        </section>
+        <section class="contact-bottom"><div class="container contact-bottom-inner" data-reveal><span>Good conversations make good things.</span><span>Based everywhere. Better together. <b>✳</b></span></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-main"><a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">g</span>github<span>colab</span></a><p>Independent by nature.<br>Better together.</p><a class="footer-email" href="mailto:hello@githubcolab.com">hello@githubcolab.com <span>↗</span></a></div><div class="container footer-bottom"><span>© <span data-year></span> GitHubColab Studio</span><div><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div><span>Made with intention.</span></div></footer>
+</body>
+</html>
