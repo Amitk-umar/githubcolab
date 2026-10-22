@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#f8fafc">
+    <title>GitHubColab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="GitHubColab home">
+                <span class="brand-mark" aria-hidden="true">G</span>
+                <span>GitHub<span class="brand-accent">Colab</span></span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-content" id="primary-navigation">
+                <ul class="nav-links">
+                    <li><a class="nav-link active" href="#home" aria-current="page">Home</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                </ul>
+                <a class="nav-cta" href="#get-started">Get started <span aria-hidden="true">→</span></a>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
