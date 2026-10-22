@@ -3,27 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHubColab</title>
+    <meta name="theme-color" content="#f7f6f2">
+    <meta name="description" content="GitHubColab is an independent digital studio building thoughtful websites and useful digital experiences.">
+    <title>GitHubColab — Good ideas, made together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="navbar" aria-label="Main navigation">
-        <a class="logo" href="#home">GitHubColab</a>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="GitHubColab home"><span class="logo-mark" aria-hidden="true">g</span>github<span>colab</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a class="nav-cta" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero-copy" data-reveal>
+                <p class="eyebrow"><span class="eyebrow-dot"></span> Independent digital studio</p>
+                <h1>Good ideas,<br>made <span class="serif-accent">together.</span></h1>
+                <p class="hero-intro">We partner with ambitious people to turn big, messy ideas into thoughtful digital experiences that make a difference.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="services.html">Explore what we do <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-note"><span class="avatar-stack" aria-hidden="true"><i>J</i><i>M</i><i>A</i></span><span>A small team for your big next thing.</span></div>
+            </div>
+            <div class="hero-art" data-reveal aria-label="Illustration of a collaborative project dashboard">
+                <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+                <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✳</div>
+                <div class="project-card">
+                    <div class="project-top"><span class="project-label"><span class="live-dot"></span> THE GOOD STUFF</span><span class="more-dots">···</span></div>
+                    <p class="project-title">A little more<br>possibility.</p>
+                    <div class="project-progress"><span></span></div>
+                    <div class="project-bottom"><span>Building something<br>worth sharing</span><span class="project-arrow">↗</span></div>
+                </div>
+                <div class="floating-note note-top"><span class="note-icon">✦</span><span>Big ideas<br><strong>start here</strong></span></div>
+                <div class="floating-note note-bottom"><span class="note-check">✓</span><span>Made better<br><strong>together</strong></span></div>
+                <div class="art-caption">A GOOD PLACE TO BEGIN <span>01 — ∞</span></div>
+            </div>
+        </section>
 
-        <button class="menu-toggle" type="button" aria-label="Open menu"
-            aria-expanded="false" aria-controls="nav-links">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <section class="intro-strip">
+            <div class="container intro-strip-inner"><span class="strip-label">A different kind of partner</span><p>Good work doesn’t happen in a vacuum. <span>It happens together.</span></p><a href="about.html" aria-label="Learn about our approach">↗</a></div>
+        </section>
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a class="contact-link" href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <section class="section container home-services" data-reveal>
+            <div class="section-heading"><div><p class="eyebrow">What we bring to the table</p><h2>From first thought<br>to <span class="serif-accent">fully formed.</span></h2></div><a class="text-link" href="services.html">All services <span aria-hidden="true">→</span></a></div>
+            <div class="service-grid">
+                <a class="service-card" href="services.html#strategy"><span class="card-number">01 / THINK</span><span class="service-symbol symbol-peach">↗</span><h3>Find your<br>north star.</h3><p>Clarity, direction, and a plan that gets everyone moving.</p><span class="card-link">Strategy &amp; discovery <span>↗</span></span></a>
+                <a class="service-card" href="services.html#design"><span class="card-number">02 / MAKE</span><span class="service-symbol symbol-lilac">✳</span><h3>Make it<br>mean something.</h3><p>Distinctive identities and digital experiences people remember.</p><span class="card-link">Brand &amp; design <span>↗</span></span></a>
+                <a class="service-card" href="services.html#development"><span class="card-number">03 / BUILD</span><span class="service-symbol symbol-green">⌘</span><h3>Make it<br>real.</h3><p>Thoughtful technology, built to work beautifully in the real world.</p><span class="card-link">Web &amp; development <span>↗</span></span></a>
+            </div>
+        </section>
+
+        <section class="home-cta">
+            <div class="container cta-inner" data-reveal><p class="eyebrow">Have a good one?</p><h2>Let’s make<br><span class="serif-accent">something of it.</span></h2><a class="button button-light" href="contact.html">Tell us about it <span aria-hidden="true">↗</span></a><span class="cta-decoration" aria-hidden="true">✳</span></div>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-main"><a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">g</span>github<span>colab</span></a><p>Independent by nature.<br>Better together.</p><a class="footer-email" href="mailto:hello@githubcolab.com">hello@githubcolab.com <span>↗</span></a></div><div class="container footer-bottom"><span>© <span data-year></span> GitHubColab Studio</span><div><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div><span>Made with intention.</span></div></footer>
 </body>
 </html>
